@@ -1,0 +1,34 @@
+{
+  "name": "greenfactory-elevator-jquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gemst0ne/GreenFactory-elevator-jquery.git"
+  },
+  "author": "wonseok-chang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gemst0ne/GreenFactory-elevator-jquery/issues"
+  },
+  "homepage": "https://github.com/gemst0ne/GreenFactory-elevator-jquery#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "underscore": "^1.9.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.2.1",
+    "clean-webpack-plugin": "^2.0.1",
+    "css-loader": "^2.1.1",
+    "html-loader": "^0.5.5",
+    "style-loader": "^0.23.1"
+  }
+}

@@ -1,0 +1,17 @@
+<!-- #breadcrumb:src/js/template/template.html -->
+<div style="height:<%= floorLength*55 + 5 %>px;" class="column" data-btn-wrapper>
+    <% for(var i= 1 ; i <= floorLength; i++) { %>
+    <div class="buttonWrapper">
+        <button data-elevator-btn data-btn="<%= floorLength+1-i %>"><%= floorLength+1-i %>층</button>
+    </div>
+    <% } %>
+</div>
+<div style="height:<%= floorLength*55 + 10 %>px; float: left;" data-elevator-wrapper>
+    <% for(var j =1 ; j<= elevatorNumber; j++) { %>
+    <div class="column elevatorColumn" id="elevator<%= j %>" style="height:<%= floorLength*55 + 5 %>px;">
+        <% for(var i= 1 ; i <= floorLength; i++) { %>
+        <div class="floor" data-floor="<%= floorLength+1-i %>"></div>
+        <% } %>
+    </div>
+    <% } %>
+</div>

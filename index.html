@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Elevator</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+<body>
+<div class="container">
+    <div class="setting">
+        <label for="_elevator">엘리베이터 개수</label>
+        <select id="_elevator">
+            <option value="4">4개</option>
+            <option value="3">3개</option>
+            <option value="2">2개</option>
+        </select>
+        <label for="_floor">층 수</label>
+        <select id="_floor">
+            <option value="5">5층</option>
+            <option value="4">4층</option>
+            <option value="3">3층</option>
+            <option value="2">2층</option>
+        </select>
+        <button id="render">render</button>
+    </div>
+    <div class="content">
+
+    </div>
+</div>
+
+<div class="rule">
+    <h3 class="ruleTitle">규칙</h3>
+    <ul>
+        <li>엘리베이터는 초 당 한 개의 층을 이동</li>
+        <li>엘리베이터가 목적 층에 도착했을 때 3초간 머무른 후에 움직임</li>
+        <li>버튼이 눌린 시점에 해당 층에 가장 빨리 도착할 수 있는 엘리베이터가 이동</li>
+        <li>버튼을 누른 층에 이미 엘리베이터가 대기 중이라면 그 명령은 무시</li>
+        <li>한 번 누른 버튼은 취소할 수 없음</li>
+    </ul>
+</div>
+</body>
+</html>
