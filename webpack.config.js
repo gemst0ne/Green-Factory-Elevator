@@ -65,6 +65,7 @@ module.exports = (env, options) => {
 		];
 		config.devServer = {
 			hot: true,
+      port: 8080,
 			contentBase: path.join(__dirname, '/public/dist'),
 			stats: {
 				color: true
