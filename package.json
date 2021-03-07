@@ -6,7 +6,12 @@
   "scripts": {
     "build-dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --open --mode development"
+    "dev": "webpack-dev-server --open --mode development",
+    "cypress:open": "cypress open --env configFile=local",
+    "cypress:run": "cypress run --env configFile=local",
+    "start": "webpack-dev-server --mode development",
+    "e2e:open": "start-server-and-test start http-get://localhost:8080 cypress:open",
+    "e2e:run": "start-server-and-test start http-get://localhost:8080 cypress:run"
   },
   "repository": {
     "type": "git",
@@ -23,6 +28,8 @@
     "underscore": "^1.9.1"
   },
   "devDependencies": {
+    "start-server-and-test": "1.12.0",
+    "cypress": "^6.6.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "clean-webpack-plugin": "^2.0.1",
