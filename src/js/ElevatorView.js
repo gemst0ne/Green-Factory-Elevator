@@ -112,7 +112,7 @@ ElevatorView.prototype = {
      */
     _cacheEventHandlers: function () {
         this._eventHandlers = {};
-        this._eventHandlers._onClickButton = $.proxy(this._onClickButton, this);
+        this._eventHandlers._onClickButton = this._onClickButton.bind(this)
     },
 
     /**

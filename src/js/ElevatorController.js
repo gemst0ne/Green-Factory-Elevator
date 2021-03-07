@@ -66,10 +66,10 @@ ElevatorController.prototype = {
      */
     _cacheEventHandlers: function () {
         this._eventHandlers = {};
-        this._eventHandlers._onClickButton = $.proxy(this._onClickButton, this);
-        this._eventHandlers._onFindElevator = $.proxy(this._onFindElevator, this);
-        this._eventHandlers._onAlreadyArrivedElevator = $.proxy(this._onAlreadyArrivedElevator, this);
-        this._eventHandlers._onArriveToTargetFloor = $.proxy(this._onArriveToTargetFloor, this);
+        this._eventHandlers._onClickButton = this._onClickButton.bind(this)
+        this._eventHandlers._onFindElevator = this._onFindElevator.bind(this);
+        this._eventHandlers._onAlreadyArrivedElevator = this._onAlreadyArrivedElevator.bind(this);
+        this._eventHandlers._onArriveToTargetFloor = this._onArriveToTargetFloor.bind(this);
     },
 
 
