@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded',function () {
   });
 
   window.activateButton = function (i) {
-    elevator.activateButton(i);
+    return elevator ? elevator.activateButton(i): false;
   };
 
   window.isButtonActivated = function (i) {
-    return elevator.isButtonActivated(i);
+    return elevator ? elevator.isButtonActivated(i): false;
   };
 })
 
