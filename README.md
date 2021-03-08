@@ -1,4 +1,4 @@
-# GreenFactory elevator<br>(ES5 + jQuery + underscore + Webpack + Cypress)
+# Green Factory Elevator<br>(ES5 + jQuery + underscore + Webpack + Cypress)
 
 ## Project setup
 ```
