@@ -62,7 +62,7 @@ ElevatorCollection.prototype = {
      * @private
      */
     _findElevatorPerSecond: function () {
-        var intervalID = setInterval(function () {  // TODO model로 부터 event를 받아서 활성화 상태의 엘리베이터 찾는것으로 바꿀예정
+        var intervalID = setInterval(function () {
             var targetFloor = this._targetFloors[0];
             var nearestDistance = this._getNearestDistance(targetFloor, false);
             var targetElevatorID = this._getTargetElevatorID(targetFloor, nearestDistance);

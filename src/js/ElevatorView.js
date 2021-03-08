@@ -150,7 +150,7 @@ ElevatorView.prototype = {
         var repetitions = 0;
         var criterion = distance > 0 ? -1 : 1;
         this._$elevatorElements[elevatorID].find("[data-floor=" + current + "]").addClass("active");
-        var intervalID = setInterval(function () {   //TODO requestAnimationFrame 으로 바꿀예정
+        var intervalID = setInterval(function () {
             current += criterion;
             this._$elevatorElements[elevatorID].find("div").removeClass("elevator active");
             this._$elevatorElements[elevatorID].find("[data-floor=" + current + "]").addClass("elevator active");
