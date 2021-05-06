@@ -25,7 +25,7 @@
   "homepage": "https://github.com/gemst0ne/GreenFactory-elevator-jquery#readme",
   "dependencies": {
     "jquery": "^3.3.1",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "start-server-and-test": "1.12.0",
